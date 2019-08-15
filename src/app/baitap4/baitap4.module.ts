@@ -9,11 +9,12 @@ import { Baitap4FooterComponent } from './baitap4-footer/baitap4-footer.componen
 import { FooterContentComponent } from './baitap4-footer/footer-content/footer-content.component';
 import { FooterContentImgComponent } from './baitap4-footer/footer-content/footer-content-img/footer-content-img.component';
 import { Baitap4CardComponent } from './baitap4-card/baitap4-card.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 
 @NgModule({
-  declarations: [Baitap4Component, Baitap4HeaderComponent, Baitap4CarouselComponent, Baitap4SmartphoneComponent, Baitap4LaptopComponent, Baitap4FooterComponent, FooterContentComponent, FooterContentImgComponent, Baitap4CardComponent],
+  declarations: [Baitap4Component, Baitap4HeaderComponent, Baitap4CarouselComponent, Baitap4SmartphoneComponent, Baitap4LaptopComponent, Baitap4FooterComponent, FooterContentComponent, FooterContentImgComponent, Baitap4CardComponent, ModalComponent],
   exports: [Baitap4Component],
   imports: [
     CommonModule

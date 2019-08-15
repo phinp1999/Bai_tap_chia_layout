@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core'
 
 @Component({
   selector: 'app-baitap4-card',
@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./baitap4-card.component.scss']
 })
 export class Baitap4CardComponent implements OnInit {
-
+  @Input() card;
+  @Output() eventDetail = new EventEmitter();
+  status:boolean = true;
   constructor() { }
 
   ngOnInit() {
   }
 
+  Detail(){
+    this.eventDetail.emit(this.card);
+  }
+
+  HideDes(){
+    this.status = false;
+  }
+
+  ShowDes(){
+    this.status = true;
+  }
 }
